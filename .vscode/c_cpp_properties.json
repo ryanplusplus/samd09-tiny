@@ -1,0 +1,23 @@
+{
+  "configurations": [
+    {
+      "name": "seesaw",
+      "defines": [
+        "__SAMD09D14A__",
+        "DONT_USE_CMSIS_INIT"
+      ],
+      "includePath": [
+        "${workspaceFolder}/lib/asf/sam0/utils/cmsis/samd09/include",
+        "${workspaceFolder}/lib/asf/thirdparty/CMSIS/Include",
+        "${workspaceFolder}/lib/tiny.cpp/include",
+        "${workspaceFolder}/src/board/seesaw",
+        "${workspaceFolder}/src/hardware"
+      ],
+      "intelliSenseMode": "gcc-arm",
+      "cStandard": "c11",
+      "cppStandard": "c++17",
+      "compilerPath": "arm-none-eabi-gcc"
+    }
+  ],
+  "version": 4
+}
