@@ -9,8 +9,6 @@ include tools/defaults.mk
 
 CPPFLAGS := $(filter-out -nostartfiles,$(CPPFLAGS))
 
-# LDLIBS += -lstdc++
-
 INC_DIRS += \
 
 SYS_INC_DIRS += \

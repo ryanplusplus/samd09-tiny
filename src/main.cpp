@@ -4,11 +4,6 @@
  */
 
 #include "board.hpp"
-#include "Clock.hpp"
-#include "SystemTick.hpp"
-// #include "Watchdog.hpp"
-// #include "Heartbeat.hpp"
-#include "Interrupts.hpp"
 #include "tiny/Timer.hpp"
 
 using namespace tiny;
@@ -19,8 +14,8 @@ int main(void)
 
   Clock::init();
   TimerGroup timer_group{ SystemTick::get_instance() };
-  // Watchdog watchdog{ timer_group };
-  // Heartbeat heartbeat{ timer_group };
+  Watchdog watchdog{ timer_group };
+  Heartbeat heartbeat{ timer_group };
 
   Interrupts::enable();
 
