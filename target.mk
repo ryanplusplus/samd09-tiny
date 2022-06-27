@@ -7,8 +7,6 @@ BOARD ?= seesaw
 include board/$(BOARD).mk
 include tools/defaults.mk
 
-CPPFLAGS := $(filter-out -nostartfiles,$(CPPFLAGS))
-
 INC_DIRS += \
 
 SYS_INC_DIRS += \
