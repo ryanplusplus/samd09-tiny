@@ -8,7 +8,7 @@
 
 using namespace tiny;
 
-int main(void)
+int main()
 {
   Interrupts::disable();
 
