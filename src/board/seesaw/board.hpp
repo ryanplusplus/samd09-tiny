@@ -10,8 +10,8 @@
 #include "SystemTick.hpp"
 #include "Watchdog.hpp"
 #include "Interrupts.hpp"
-#include "Pa27Heartbeat.hpp"
+#include "HeartbeatTemplate.hpp"
 
-using Heartbeat = Pa27Heartbeat;
+using Heartbeat = HeartbeatTemplate<PIN_PA27>;
 
 #endif
