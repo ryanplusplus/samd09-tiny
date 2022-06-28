@@ -11,46 +11,9 @@
       "request": "launch",
       "type": "cortex-debug",
       "servertype": "jlink",
-      "device": "ATSAMD09G14",
+      "device": "ATSAMD09D14",
       "svdFile": "${workspaceFolder}/build/target.svd",
       "preLaunchTask": "jlink-debug-deps"
-    },
-    {
-      "name": "Target (openocd, jlink)",
-      "cwd": "${workspaceRoot}",
-      "executable": "${workspaceFolder}/build/target.elf",
-      "request": "launch",
-      "type": "cortex-debug",
-      "servertype": "openocd",
-      "configFiles": [
-        "${workspaceRoot}/openocd/debug.cfg"
-      ],
-      "svdFile": "${workspaceFolder}/build/target.svd",
-      "preLaunchTask": "openocd-debug-deps"
-    },
-    {
-      "name": "Target (black_magic)",
-      "cwd": "${workspaceRoot}",
-      "executable": "${workspaceFolder}/build/target.elf",
-      "request": "launch",
-      "type": "cortex-debug",
-      "servertype": "bmp",
-      "BMPGDBSerialPort": "/dev/ttyACM0",
-      "powerOverBMP": "disable",
-      "svdFile": "${workspaceFolder}/build/target.svd",
-      "preLaunchTask": "black-magic-debug-deps",
-    },
-    {
-      "name": "Target (black_magic, powered)",
-      "cwd": "${workspaceRoot}",
-      "executable": "${workspaceFolder}/build/target.elf",
-      "request": "launch",
-      "type": "cortex-debug",
-      "servertype": "bmp",
-      "BMPGDBSerialPort": "/dev/ttyACM0",
-      "powerOverBMP": "enable",
-      "svdFile": "${workspaceFolder}/build/target.svd",
-      "preLaunchTask": "black-magic-debug-deps",
     }
   ]
 }
