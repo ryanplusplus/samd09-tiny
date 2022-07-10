@@ -1,6 +1,6 @@
 /*!
  * @file
- * @brief
+ * @brief Needed to use -nostartfiles.
  */
 
 #include <stddef.h>
