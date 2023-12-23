@@ -7,8 +7,8 @@ extern "C" {
 #include "samd09.h"
 }
 
-#include "Watchdog.hpp"
 #include "Clock.hpp"
+#include "Watchdog.hpp"
 
 using namespace tiny;
 

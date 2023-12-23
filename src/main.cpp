@@ -13,9 +13,9 @@ int main()
   Interrupts::disable();
 
   Clock::init();
-  TimerGroup timer_group{SystemTick::get_instance()};
-  Watchdog watchdog{timer_group};
-  Heartbeat heartbeat{timer_group};
+  TimerGroup timer_group{ SystemTick::get_instance() };
+  Watchdog watchdog{ timer_group };
+  Heartbeat heartbeat{ timer_group };
 
   Interrupts::enable();
 
